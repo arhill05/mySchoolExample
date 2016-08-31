@@ -17,6 +17,7 @@
   })
   .when('/homework', {
     templateUrl: './assets/html/homework.html',
+    controller: 'homeworkController'
   })
   .when('/clubs', {
     templateUrl: './assets/html/clubs.html',

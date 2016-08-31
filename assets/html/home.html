@@ -4,6 +4,11 @@
   <h3>Upcoming Homework</h3>
 
   <div id="upcomingHomework">
+    <ul>
+      <li ng-if="events.length = 0">No homework due!</li>
+      <li ng-if="events.length > 0" ng-repeat="event in events">Homework: {{event.description}}, 
+        due date: {{event.end}}</li>
+    </ul>
   </div>
 </div>
 
